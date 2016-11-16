@@ -394,6 +394,8 @@ mc_configuration MainWindow::getMcconfGui()
         mcconf.m_sensor_port_mode = SENSOR_PORT_MODE_ABI;
     } else if (ui->mcconfMSensorAsSpiButton->isChecked()) {
         mcconf.m_sensor_port_mode = SENSOR_PORT_MODE_AS5047_SPI;
+    } else if (ui->mcconfMSensorAsI2cButton->isChecked()) {
+        mcconf.m_sensor_port_mode = SENSOR_PORT_MODE_AS5048_I2C;
     }
 
     mcconf.meta_description = ui->mcconfDescEdit->toHtml();
@@ -583,6 +585,9 @@ void MainWindow::setMcconfGui(const mc_configuration &mcconf)
         break;
     case SENSOR_PORT_MODE_AS5047_SPI:
         ui->mcconfMSensorAsSpiButton->setChecked(true);
+        break;
+    case SENSOR_PORT_MODE_AS5048_I2C:
+        ui->mcconfMSensorAsI2cButton->setChecked(true);
         break;
     default:
         break;

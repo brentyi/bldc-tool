@@ -135,7 +135,8 @@ typedef enum {
 typedef enum {
     SENSOR_PORT_MODE_HALL = 0,
     SENSOR_PORT_MODE_ABI,
-    SENSOR_PORT_MODE_AS5047_SPI
+    SENSOR_PORT_MODE_AS5047_SPI,
+    SENSOR_PORT_MODE_AS5048_I2C
 } sensor_port_mode;
 
 typedef struct {

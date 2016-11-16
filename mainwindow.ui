@@ -2622,6 +2622,13 @@ p, li { white-space: pre-wrap; }
                      </property>
                     </widget>
                    </item>
+                   <item row="1" column="1">
+                    <widget class="QRadioButton" name="mcconfMSensorAsI2cButton">
+                     <property name="text">
+                      <string>AS5048 I2C</string>
+                     </property>
+                    </widget>
+                   </item>
                   </layout>
                  </widget>
                 </item>
